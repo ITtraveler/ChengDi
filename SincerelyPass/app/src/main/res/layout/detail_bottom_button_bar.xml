@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/detail_bn_acceptance_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0.25"
+        android:background="@drawable/bn_acceptance_bg"
+        android:text="我要接单"
+        android:textColor="@color/colorWhite" />
+
+    <Button
+        android:id="@+id/detail_bn_complaint"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0.5"
+        android:background="@drawable/bn_complaint_bg"
+        android:text="投诉"
+        android:textColor="@color/colorWhite" />
+
+    <Button
+        android:id="@+id/detail_bn_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0.5"
+        android:background="@drawable/bn_phone_bg"
+        android:text="电话"
+        android:textColor="@color/colorWhite" />
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/login_stroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        android:onClick="loginStroll"
+        android:text="随便逛逛 》"
+        android:textColor="@color/colorMain"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/LinearLayoutLoginStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorMainAlpha"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_user" />
+
+            <EditText
+                android:id="@+id/login_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorMainAlpha2"
+                android:hint="手机号"
+                android:inputType="phone"
+                android:padding="6dp"
+                android:singleLine="true"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinearLayoutLoginStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorMainAlpha"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_psw" />
+
+            <EditText
+                android:id="@+id/login_psw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorMainAlpha2"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:padding="6dp"
+                android:singleLine="true"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/login_forget_psw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:onClick="forgetPSW"
+            android:text="忘记密码"
+            android:textColor="@color/colorMain"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_in"
+        style="@style/ButtonStyle.login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_margin="5dp"
+        android:onClick="login"
+        android:text="登  录" />
+
+    <Button
+        android:id="@+id/register"
+        style="@style/ButtonStyle.login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_margin="5dp"
+        android:onClick="register"
+        android:text="注  册" />
+</LinearLayout>

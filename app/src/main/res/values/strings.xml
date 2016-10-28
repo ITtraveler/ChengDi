@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">诚递</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">主页</string>
+    <string name="menu_go">我的</string>
+
+    <string name="bar_name_publish">诚递需求</string>
+    <string name="bar_name_detail">诚递详情</string>
+    <string name="bar_name_set">诚递设置</string>
+    <string name="bar_name_location">诚递定位</string>
+    <string name="bar_name_register">诚递注册</string>
+
+    <string name="bar_select_acceptance">我的接单</string>
+    <string name="bar_select_publish">我的发布</string>
+    <string name="bar_select_going">进行中</string>
+    <string name="bar_select_complete">已完成</string>
+
+    <string name="info_user">个人信息</string>
+    <string name="info_user_head">头像</string>
+    <string name="info_user_name">昵称</string>
+    <string name="info_user_sex">性别</string>
+    <string name="info_user_phone">手机号</string>
+    <string name="info_user_age">年龄</string>
+    <string name="info_user_hometown">家乡</string>
+    <string name="info_user_job">职业</string>
+    <string name="info_user_subscription">我的签名</string>
+    <string name="info_user_id">身份认证</string>
+    <string name="info_user_set_name">起个高大上名字吧!</string>
+    <string name="info_user_sex_male">男</string>
+    <string name="info_user_sex_female">女</string>
+    <string name="info_user_set">未填写</string>
+    <string name="info_user_authentication">身份认证</string>
+
+
+    <string name="nav_set">设置</string>
+    <string name="nav_service">客服</string>
+    <string name="nav_advice">反馈</string>
+    <string name="nav_pocket">口袋</string>
+    <string name="nav_notice">通知</string>
+    <string name="nav_share">分享</string>
+
+    <string name="confirm">确认</string>
+
+    <string name="set_about_us">关于我们</string>
+    <string name="set_help">帮助</string>
+    <string name="set_update">版本更新</string>
+    <string name="set_update_phone">修改手机号</string>
+    <string name="set_update_passwd">修改密码</string>
+    <string name="set_login_out">退出登录</string>
+    <string name="hint_login">诚递为您服务</string>
+    <string name="bn_hint_login">去登录</string>
+    <string name="bar_name_feedback">意见反馈</string>
+</resources>

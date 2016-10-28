@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/ComponentMarginStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/listWhiteStyle.textTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="类别" />
+
+                <Spinner
+                    android:id="@+id/publish_spinner_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/publish_category" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ComponentMarginStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/listWhiteStyle.textTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="限时" />
+
+                <EditText
+                    android:id="@+id/publish_limitTime"
+                    style="@style/EditTextStyle"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="datetime" />
+
+                <Spinner
+                    android:id="@+id/publish_spinner_limitTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:entries="@array/publish_limitTime" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ComponentMarginStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/listWhiteStyle.textTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="佣金" />
+
+                <EditText
+                    android:id="@+id/publish_commission"
+                    style="@style/EditTextStyle"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:hint="0-9999"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    style="@style/listWhiteStyle.textTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="元" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/publish_count_task"
+                style="@style/listWhiteStyle.textTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="需求详情 0/120" />
+
+            <EditText
+                android:id="@+id/publish_task"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="120" />
+
+            <TextView
+                android:id="@+id/publish_count_remarks"
+                style="@style/listWhiteStyle.textTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+
+                android:text="备注  0/32" />
+
+            <EditText
+                android:id="@+id/publish_remarks"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="32" />
+
+            <LinearLayout
+                style="@style/ComponentMarginStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/listWhiteStyle.textTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="目的地 " />
+
+                <EditText
+                    android:id="@+id/publish_destination"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:maxLength="32"
+                     />
+
+                <ImageView
+                    android:id="@+id/publish_ic_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:src="@drawable/ic_destination" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/publish_destination_remarks"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="地址其他说明"
+                android:maxLength="24" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/publish_bn"
+        style="@style/ButtonStyle.Blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="publish"
+        android:overScrollMode="never"
+        android:text="发布需求" />
+</LinearLayout>

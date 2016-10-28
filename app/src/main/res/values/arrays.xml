@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="publish_limitTime">
+        <item>分钟</item>
+        <item>小时</item>
+        <item>天</item>
+        <item>个月</item>
+        <item>不限</item>
+    </string-array>
+    <string-array name="publish_category">
+        <item>买东西</item>
+        <item>取东西</item>
+        <item>代办事</item>
+        <item>其他</item>
+    </string-array>
+</resources>

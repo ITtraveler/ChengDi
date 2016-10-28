@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_menu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/ic_bottom_menu_bg"
+    android:orientation="vertical">
+
+
+    <RadioButton
+        android:id="@+id/menu_rb_home"
+        style="@style/RadioButtonStyle.mainMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/menu_bn_publish"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:checked="true"
+        android:drawableLeft="@drawable/cd_bottom_menu_home"
+        android:text="@string/menu_home" />
+
+    <RadioButton
+        android:id="@+id/menu_rb_go"
+        style="@style/RadioButtonStyle.mainMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/menu_bn_publish"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:checked="false"
+        android:drawableRight="@drawable/cd_bottom_menu_home"
+        android:text="@string/menu_go" />
+
+    <ImageButton
+        android:id="@+id/menu_bn_publish"
+        style="@style/RadioButtonStyle.mainMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_rb_hide"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_bottom_menu_main" />
+
+    <RadioButton
+        android:id="@+id/menu_rb_hide"
+        style="@style/RadioButtonStyle.mainMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/cd_bottom_menu_status"
+        android:checked="true" />
+
+</RelativeLayout>

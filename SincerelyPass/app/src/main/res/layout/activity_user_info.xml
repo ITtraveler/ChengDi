@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/info_user_head"
+            style="@style/listWhiteStyle.linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setHead">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/info_user_head" />
+
+            <com.jingjia.chengdi.custom.view.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/head" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/info_user_name"
+            style="@style/listWhiteStyle.linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setName">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/info_user_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_user_set_name" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/info_user_sex"
+            style="@style/listWhiteStyle.linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setSex">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/info_user_sex" />
+
+            <TextView
+                android:id="@+id/info_set_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_user_sex_male" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/info_user_age"
+            style="@style/listWhiteStyle.linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setAge">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/info_user_age" />
+
+            <TextView
+                android:id="@+id/info_set_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_user_set" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="ic_right"
+                android:src="@drawable/ic_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/info_user_phone"
+            style="@style/listWhiteStyle.linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setPhone">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/info_user_phone" />
+
+            <TextView
+                android:id="@+id/info_set_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_user_set"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/info_user_hometown"
+            style="@style/listWhiteStyle.linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setHometown">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/info_user_hometown" />
+
+            <TextView
+                android:id="@+id/info_set_hometown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_user_set" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/info_user_job"
+            style="@style/listWhiteStyle.linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setJob">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/info_user_job" />
+
+            <TextView
+                android:id="@+id/info_set_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_user_set" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/info_user_subscript"
+            style="@style/listWhiteStyle.linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setSubScript">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/info_user_subscription" />
+
+            <TextView
+                android:id="@+id/info_set_subscript"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_user_set"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/info_user_authentication"
+            style="@style/listWhiteStyle.linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="setAuthentication">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/info_user_authentication" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_right" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

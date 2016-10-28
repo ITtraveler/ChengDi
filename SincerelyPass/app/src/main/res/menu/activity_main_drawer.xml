@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_pocket"
+            android:icon="@drawable/ic_menu_pocket"
+            android:title="@string/nav_pocket" />
+        <item
+            android:id="@+id/nav_notice"
+            android:icon="@drawable/ic_menu_notice"
+            android:title="@string/nav_notice" />
+        <item
+            android:id="@+id/nav_service"
+            android:icon="@drawable/ic_menu_service"
+            android:title="@string/nav_service" />
+        <item
+            android:id="@+id/nav_set"
+            android:icon="@drawable/ic_menu_set"
+            android:title="@string/nav_set" />
+    </group>
+
+    <item android:title="Contribution">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/nav_share" />
+            <item
+                android:id="@+id/nav_advice"
+                android:icon="@drawable/ic_menu_advice"
+                android:title="@string/nav_advice" />
+        </menu>
+    </item>
+</menu>

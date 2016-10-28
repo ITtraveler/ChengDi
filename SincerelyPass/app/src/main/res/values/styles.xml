@@ -1,0 +1,95 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ComponentMarginStyle">
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="RadioButtonStyle">
+        <item name="android:button">@null</item>
+    </style>
+    <style name="RadioButtonStyle.mainMenu">
+        <item name="android:layout_marginBottom">5dp</item>
+
+    </style>
+    <style name="RadioButtonStyle.selectBar">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/go_select_bar</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:textColor">@color/colorTextOne</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="RadioButtonStyle.statusBar">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/go_state</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="RadioButtonStyle.scrollItem">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorTextOne</item>
+        <item name="android:background">@drawable/home_scroll_item</item>
+        <!--<item name="android:layout_marginLeft">10dp</item>-->
+        <!--<item name="android:layout_marginRight">10dp</item>-->
+        <!--<item name="android:layout_marginTop">5dp</item>-->
+        <!--<item name="android:layout_marginBottom">5dp</item>-->
+    </style>
+    <style name="listWhiteStyle"></style>
+    <style name="listWhiteStyle.linearLayout">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">@dimen/info_user_margin_top</item>
+        <item name="android:paddingBottom">@dimen/info_user_margin_bottom</item>
+        <item name="android:background">@drawable/bn_white_bg</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="listWhiteStyle.textOne">
+        <item name="android:textSize">@dimen/info_user_text_size</item>
+        <item name="android:textColor">@color/colorTextThree</item>
+    </style>
+    <style name="listWhiteStyle.textTwo">
+        <item name="android:textSize">@dimen/info_user_text_size</item>
+        <item name="android:textColor">@color/colorTextOne</item>
+    </style>
+    <style name="EditTextStyle">
+        <item name="android:background">@color/colorBackground</item>
+        <item name="android:padding">8dp</item>
+    </style>
+    <style name="ButtonStyle">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+    <style name="ButtonStyle.Blue">
+        <item name="android:background">@drawable/bn_acceptance_bg</item>
+    </style>
+    <style name="ButtonStyle.alphaBlue">
+        <item name="android:background">@drawable/bn_blue_alpha_bg</item>
+    </style>
+    <style name="ButtonStyle.orange">
+        <item name="android:background">@drawable/bn_phone_bg</item>
+    </style>
+    <style name="LinearLayoutLoginStyle">
+        <item name="android:background">@color/colorBackground</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+</resources>
